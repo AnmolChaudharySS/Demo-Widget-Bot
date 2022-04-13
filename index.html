@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./ah-ha-inject.js"></script>
+    <title>SS Demo Loan Servicing</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script src="./gtm.js"></script> -->
+  </head>
+  <body>
+    <script>
+      const config = {
+        introText: `See if you can lower your payments to as little as $0/month.
+            <br/>I can help you with other things too.`,
+        greetingText: `Hi, I'm Millie!`,
+        logoPath: './assets/logo.png',
+        closeIconPath: './assets/close-icon.png',
+        chatIconPath: './assets/chat-icon.png',
+        //botpressIframeSrc: 'https://app.ah-ha.io/lite/ss-loan-bot/?m=channel-web&v=Fullscreen&options={%22hideWidget%22:true,%22config%22:{%22enableReset%22:true,%22enableTranscriptDownload%22:true,%22extraStylesheet%22:%22https://widgets.ah-ha.io//demo-ah-ha-io/style-iframe.css%22,%22showConversationsButton%22:false}}',
+        botpressIframeSrc: 'https://app.ah-ha.io/lite/ss-demo-bot-loan/?m=channel-web&v=Fullscreen&options=%7B%22hideWidget%22%3Atrue%2C%22config%22%3A%7B%22enableReset%22%3Atrue%2C%22enableTranscriptDownload%22%3Atrue%7D%7D',
+        openTeaser: false,
+        startButtonText: `START CHAT`,
+      }
+      initAhHaBot(config)
+    </script>
+    <!-- <script src="./script.js"></script> -->
+    <div class="image-container">
+      <div class="image-header">
+        <svg id="close-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" fill="#fff" />
+        </svg>
+      </div>
+      <div class="image-area">
+        <img src="" alt="image-grep" />
+      </div>
+    </div>
+  </body>
+  <script src="./image-grep.js"></script>
+</html>
+

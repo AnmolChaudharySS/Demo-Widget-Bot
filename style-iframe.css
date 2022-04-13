@@ -1,0 +1,81 @@
+/* styling for ah-ha-demo bot iframe */
+body {
+  font-size: 16px !important;
+  font-family: Helvetica, sans-serif !important;
+}
+
+.bpw-bot-avatar img,
+.bpw-bot-avatar svg {
+  border: solid 3px white;
+  border-radius: 50%;
+  background: #fff;
+}
+.bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: rgb(57, 37, 107);
+}
+.bpw-header-container {
+  color: white;
+  background-color: rgb(110, 203, 173);
+}
+
+.bpw-header-icon svg,
+.bpw-header-icon svg path {
+  fill: #feffff;
+}
+.bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: white;
+}
+
+.bpw-chat-bubble {
+  color: rgb(248, 248, 248);
+}
+a.bpw-card-action {
+    color: rgb(57,37,107);
+    text-decoration: none !important;
+    border: solid 2px rgb(57,37,107);
+    margin: 4px;
+}
+
+a.bpw-card-action:hover {
+    color: rgb(255 255 255);
+    text-decoration: none !important;
+    background-color: rgb(57,37,107);
+}
+.bpw-layout.bpw-chat-container.bpw-anim-fadeIn {
+  height: 475px;
+  margin: 5px;
+}
+/* to make logo smaller of body message container */
+.bpw-message-big-container .bpw-bot-avatar img {
+  height: 30px;
+  width: 30px;
+}
+/* removed bold of font */
+.bpw-card-title {
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.28em;
+  overflow: hidden;
+  font-weight: unset;
+}
+/* removing border of conatiner-card */
+.bpw-card-container {
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 1);
+  line-height: 1.28em;
+  margin-right: 3px;
+  min-height: 150px;
+  max-height: 410px;
+  border: unset;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.slick-track {
+    width: 100% !important;
+}
+
+/* to remove unread chats */
+.bpw-header-unread {
+  display: none !important;
+}
